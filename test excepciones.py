@@ -1,8 +1,12 @@
-try:
-    print("1")
-    x = 1 / 0
-    print ("2")
-except:
-    print("Oh dear, something went wrong..")
-    
-print("3")
+
+lista = [1,2,3,4,5]
+ix = 0
+doit = True
+
+while doit:
+    try:
+        print(lista[ix])
+        ix += 1
+    except IndexError:
+        doit = False
+
